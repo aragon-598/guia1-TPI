@@ -1,11 +1,14 @@
 /*Quitando margenes por defecto-----------------------------------------------------------------------------*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-  }
+}
+
 
 /* Menú navbar----------------------------------------------------------------------------------------------*/
+
 header {
     background: rgba(255, 255, 255, 0.9);
     width: 100%;
@@ -13,12 +16,16 @@ header {
     z-index: 100;
 }
 
-nav{
-float: right; /* Desplazamos el nav hacia la izquierda */  
+nav {
+    float: right;
+    /* Desplazamos el nav hacia la izquierda */
 }
+
 nav ul {
-    list-style: none;/*Quitamos los estilos a las listas*/
-    overflow: hidden;/*Quitamos errores del float*/
+    list-style: none;
+    /*Quitamos los estilos a las listas*/
+    overflow: hidden;
+    /*Quitamos errores del float*/
 }
 
 nav ul li {
@@ -34,29 +41,30 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     background: #aebdaf;
 }
 
+
 /*Cambios para body y contenedor y botones------------------------------------------------------------------*/
-body{
-display: flex;
-font: bold 90% monospace;
-color: #ffffff;
+
+body {
+    display: flex;
+    font: bold 90% monospace;
+    color: #ffffff;
 }
 
 .container {
     padding-top: 80px;
     padding-left: 60px;
-    padding-right: 60px;
+    padding-right: 40%;
     padding-bottom: 80px;
 }
 
-.contenedor{
-    color: #29323c;
-    width: 100%;
-    display: flex;
-    max-width: 1100px;
+.contenedor {
+    float: left;
+    width: 35%;
+    padding-right: 16px;
 }
 
 .btn1 {
@@ -71,37 +79,42 @@ color: #ffffff;
     cursor: pointer;
 }
 
-.btn1:hover{
+.btn1:hover {
     color: #1883ba;
     background-color: #ffffff;
     border: 2px solid #ffffff;
-  }
+}
 
-  .parrafo{
+.parrafo {
     font-size: 15px;
     font-weight: 300;
     border-radius: 15px;
     padding: 20px;
     background-color: rgba(78, 61, 61, 0.5);
-  }
+}
 
-  .cnt {
+.cnt {
     font-size: 15px;
     font-weight: 300;
-    border-radius: 15px;/*suaviza los bordes*/
-    padding: 20px;/* evita que el contenido se salga del contenedor*/
-    background-color: rgba(78, 61, 61, 0.5);/* color translúcido */
-  }
+    border-radius: 15px;
+    /*suaviza los bordes*/
+    padding: 20px;
+    /* evita que el contenido se salga del contenedor*/
+    background-color: rgba(78, 61, 61, 0.5);
+    /* color translúcido */
+}
 
-/* Código para acordeon------------------------------------------------------------------------------------ */  
-.accordion{
+
+/* Código para acordeon------------------------------------------------------------------------------------ */
+
+.accordion {
     padding-top: 10px;
     width: 100%;
     margin: 0 0 20px;
-    clear:both;
+    clear: both;
 }
 
-.accordion-title{
+.accordion-title {
     position: relative;
     display: block;
     padding: 20px;
@@ -117,16 +130,16 @@ color: #ffffff;
     color: #fff;
 }
 
-.accordion-title:hover{
+.accordion-title:hover {
     background: #6a6a74;
 }
 
 .accordion-title span.toggle-icon:before {
-    content:"+";
+    content: "+";
 }
 
 .accordion-title.open span.toggle-icon:before {
-    content:"-";
+    content: "-";
 }
 
 .accordion-title span.toggle-icon {
@@ -134,19 +147,19 @@ color: #ffffff;
     top: 10px;
     right: 20px;
     font-size: 38px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-.accordion-content {
-    display: none;
-    padding: 20px;
-    overflow: auto;
+.accordion-content::after {
+    content: "";
+    clear: both;
+    display: table;
 }
- 
-.accordion-content p{
-    margin:0;
+
+.accordion-content p {
+    margin: 0;
 }
- 
+
 .accordion-content img {
     display: block;
     float: left;
@@ -161,24 +174,29 @@ color: #ffffff;
     }
 }
 
+
 /*cards-----------------------------------------------------------------------------------------------------*/
+
 .card {
-    width: 100%;
+    width: auto;
     margin: 20px;
     border-radius: 6px;
     overflow: hidden;
-    background: #fff;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
 }
 
-.card img{
+.card img {
     width: 210px;
     height: 210px;
+}
+
+img {
+    width: 100%;
 }
