@@ -149,6 +149,11 @@ body {
     font-size: 38px;
     font-weight: bold;
 }
+.accordion-content {
+    display: none;
+    padding: 20px;
+    overflow: auto;
+}
 
 .accordion-content::after {
     content: "";
