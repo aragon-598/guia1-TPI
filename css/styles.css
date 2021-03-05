@@ -149,19 +149,27 @@ figure {
 .container-promos {
     padding-top: 400px;
     background-color: rgba(255, 255, 255, 0.356);
-    padding-right: 100px;
-    padding-left: 20px;
+    padding-right: 25px;
+    padding-left: 0px;
     width: 40%;
+    justify-content: left;
 }
 
 .promos {
     float: right;
     padding: 20px;
-    display: block;
+    width: 100%;
+    height: 11%;
     background-color: rgba(71, 245, 71, 0.815);
     border-radius: 10px;
     font-size: 15px;
     font-weight: 200;
+    margin: 8px 70px;
+    transition: 1s;
+}
+
+.promos:hover {
+    transform: scale(1.4);
 }
 
 
