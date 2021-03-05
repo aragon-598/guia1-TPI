@@ -52,6 +52,10 @@ body {
     display: flex;
     font: bold 90% monospace;
     color: #ffffff;
+    background-image: url('/images/sm.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
 .container {
