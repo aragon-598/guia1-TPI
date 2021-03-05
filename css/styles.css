@@ -60,6 +60,7 @@ body {
 }
 
 .container {
+    width: 70%;
     padding-top: 80px;
     padding-left: 60px;
     padding-right: 40%;
@@ -79,12 +80,12 @@ body {
     color: #29323c;
 }
 
-figure{
+figure {
     background: #fcfafaab;
     padding: 4px;
 }
 
-.card figure img{
+.card figure img {
     height: 100px;
     border-radius: 5px;
 }
@@ -115,7 +116,7 @@ figure{
     color: #ffffff;
     background-color: #138a36;
     border-radius: 6px;
-    border: 2px solid  #138a36;
+    border: 2px solid #138a36;
     cursor: pointer;
 }
 
@@ -134,6 +135,7 @@ figure{
 }
 
 .cnt {
+    width: 250%;
     font-size: 15px;
     font-weight: 300;
     border-radius: 15px;
@@ -144,12 +146,30 @@ figure{
     /* color translúcido */
 }
 
+.container-promos {
+    padding-top: 400px;
+    background-color: rgba(255, 255, 255, 0.356);
+    padding-right: 100px;
+    padding-left: 20px;
+    width: 40%;
+}
+
+.promos {
+    float: right;
+    padding: 20px;
+    display: block;
+    background-color: rgba(71, 245, 71, 0.815);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
 
 /* Código para acordeon------------------------------------------------------------------------------------ */
 
 .accordion {
     padding-top: 10px;
-    width: 100%;
+    width: 225%;
     margin: 0 0 20px;
     clear: both;
 }
@@ -157,7 +177,8 @@ figure{
 .accordion-title {
     position: relative;
     display: block;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 10px;
     font-size: 24px;
     font-weight: 300;
     background: #5c7085;
@@ -184,11 +205,12 @@ figure{
 
 .accordion-title span.toggle-icon {
     position: absolute;
-    top: 10px;
+    top: 5px;
+    font-size: 30px;
     right: 20px;
-    font-size: 38px;
     font-weight: bold;
 }
+
 .accordion-content {
     display: none;
     padding: 20px;
