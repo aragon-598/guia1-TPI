@@ -63,7 +63,7 @@ body {
 
 .contenedor {
     float: left;
-    width: 35%;
+    width: 30%;
     padding-right: 16px;
 }
 
@@ -193,10 +193,6 @@ body {
 }
 
 .card img {
-    width: 210px;
-    height: 210px;
-}
-
-img {
     width: 100%;
+    height: 100%;
 }
